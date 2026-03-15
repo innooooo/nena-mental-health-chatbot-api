@@ -45,7 +45,7 @@ app.post('/webhook', async (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server listening on port ${port}`));
 
-document.addEventListener("DOMContentLoaded", () => {
+/* document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
 
@@ -54,3 +54,4 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Menu toggled:", menu.classList.contains("show"));
   });
 });
+ */
