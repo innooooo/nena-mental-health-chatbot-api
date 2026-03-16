@@ -43,6 +43,9 @@ app.post('/webhook', async (req, res) => {
 });
 
 const port = process.env.PORT || 3000;
+app.get('/ping', (req, res) => {
+  res.send('awake');
+});
 app.listen(port, () => console.log(`Server listening on port ${port}`));
 
 /* document.addEventListener("DOMContentLoaded", () => {
